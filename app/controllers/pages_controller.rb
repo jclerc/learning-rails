@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def index
-    render :inline => "Welcome"
+    flash[:notice] = 'Today is ' + Time.new.ctime
   end
 end
